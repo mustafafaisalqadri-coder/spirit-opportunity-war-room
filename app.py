@@ -602,8 +602,8 @@ def page_route_map():
     """, unsafe_allow_html=True)
 
     styled = df[display_cols].style \
-        .applymap(color_urgency, subset=["Urgency Score"]) \
-        .applymap(color_risk, subset=["Competitive Risk"]) \
+        .map(color_urgency, subset=["Urgency Score"]) \
+        .map(color_risk, subset=["Competitive Risk"]) \
         .format({"Annual Rev Opportunity ($M)": "${:.1f}M", "Monthly Pax Lost": "{:,.0f}"}) \
         .set_properties(**{"font-size": "12px"})
 
