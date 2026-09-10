@@ -1,0 +1,6 @@
+[ui]
+hideSidebarNav = false
+
+[theme]
+base = "light"
+primaryColor = "#003366"
